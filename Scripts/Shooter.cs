@@ -7,13 +7,13 @@ public class Shooter : MonoBehaviour
 {
 
 
-    [SerializeField] private GameObject bulletPrefab;
-    [SerializeField] private Transform gunBarrelEnd;
+    [SerializeField] GameObject bulletPrefab;
+    [SerializeField] Transform gunBarrelEnd;
 
 
     private void Update()
     {
-        //Debug.Log(VolumeFromMic.MicLoudnessinDecibels);
+        Debug.Log(VolumeFromMic.MicLoudnessinDecibels);
         //Debug.Log(VolumeFromMic.MicLoudnessinDecibels > -40.0f);
 
 
@@ -23,6 +23,13 @@ public class Shooter : MonoBehaviour
             Shoot();
         }
     }
+
+//        if (Input.GetButtonDown("Fire1"))
+//        {
+//            Shoot();
+//}
+    //}
+
 
     private void Shoot()
     {
